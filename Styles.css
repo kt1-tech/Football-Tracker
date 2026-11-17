@@ -1,0 +1,212 @@
+body {
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+background: linear-gradient(135deg, #061826, #0b3d2e, #061826);
+color: white;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+min-height: 100vh;
+margin: 0;
+}
+
+.container {
+width: 650px;
+padding: 45px;
+
+text-align: center;
+
+background: rgba(255, 255, 255, 0.08);
+
+border: 1px solid rgba(255, 255, 255, 0.15);
+border-radius: 25px;
+
+box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+font-size: 38px;
+
+margin-top: 0;
+margin-bottom: 35px;
+
+color: #ffffff;
+
+text-transform: uppercase;
+letter-spacing: 4px;
+
+text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.teams {
+display: flex;
+justify-content: center;
+align-items: center;
+
+gap: 35px;
+}
+
+.teams {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+
+.flip-card {
+width: 220px;
+height: 500px;
+background: transparent;
+perspective: 1000px;
+cursor: pointer;
+}
+
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+
+transition: transform 0.7s;
+
+transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+position: absolute;
+
+width: 100%;
+height: 100%;
+
+top: 0;
+left: 0;
+
+box-sizing: border-box;
+
+border-radius: 20px;
+
+padding: 25px;
+
+backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+
+border: 2px solid rgba(255, 255, 255, 0.2);
+
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.flip-card-front {
+background: rgba(255, 255, 255, 0.1);
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.flip-card-back {
+background: #102a43;
+
+transform: rotateY(180deg);
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#Argentina .flip-card-front {
+border-top: 5px solid #74acdf;
+}
+
+#Spain .flip-card-front {
+border-top: 5px solid #f1bf00;
+}
+
+.click-info {
+margin-top: 15px;
+font-size: 12px;
+color: #cbd5e1;
+}
+
+/* #Argentina,
+#Spain {
+width: 200px;
+
+padding: 30px 20px;
+
+background: rgba(255, 255, 255, 0.1);
+
+border: 2px solid rgba(255, 255, 255, 0.15);
+border-radius: 20px;
+
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+transition: transform 0.3s ease;
+}
+
+#Argentina:hover,
+#Spain:hover {
+transform: translateY(-8px);
+}
+
+#Argentina {
+border-top: 5px solid #74acdf;
+}
+
+#Spain {
+border-top: 5px solid #f1bf00;
+}
+
+h2 {
+font-size: 25px;
+margin-top: 0;
+
+letter-spacing: 1px;
+}
+
+#Argentina-score,
+#Spain-score {
+font-size: 75px;
+font-weight: bold;
+
+margin: 10px 0 0 0;
+
+color: white;
+
+text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+#Argentina-score {
+color: #74acdf;
+}
+
+#Spain-score {
+color: #f1bf00;
+}
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);  
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7;
+    transform-style: preserve-3d;
+}
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-card-back {
+    transform: rotateY(180deg);
+} */
